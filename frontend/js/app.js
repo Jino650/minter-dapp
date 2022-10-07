@@ -74,7 +74,7 @@ const updateConnectStatus = async () => {
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
-    onboardButton.innerText = "Connect MetaMask!";
+    onboardButton.innerText = "CONNECT WALLET";
     // HIDE SPINNER
     spinner.classList.add('hidden');
     notConnected.classList.remove('hidden');
@@ -86,7 +86,7 @@ const updateConnectStatus = async () => {
         })
         .then(function (accts) {
           onboardButton.innerText = `✔ ...${accts[0].slice(-4)}`;
-          notConnected.classList.remove('show-not-connected');
+          notConnected.classList.remove('hidden');
           notConnected.classList.add('hidden');
           // SHOW SPINNER
           spinner.classList.remove('hidden');
@@ -102,8 +102,8 @@ const updateConnectStatus = async () => {
 
 async function checkChain() {
   let chainId = 0;
-  if(chain === 'rinkeby') {
-    chainId = 4;
+  if(chain === 'goerli') {
+    chainId = 5;
   } else if(chain === 'polygon') {
     chainId = 137;
   } else if(chain === 'ethereum') {
@@ -120,15 +120,15 @@ async function checkChain() {
         // This error code indicates that the chain has not been added to MetaMask.
       if (err.code === 4902) {
         try {
-          if(chain === 'rinkeby') {
+          if(chain === 'goerli') {
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
               params: [
                 {
-                  chainName: 'Rinkeby Test Network',
+                  chainName: 'goerli Test Network',
                   chainId: web3.utils.toHex(chainId),
                   nativeCurrency: { name: 'ETH', decimals: 18, symbol: 'ETH' },
-                  rpcUrls: ['https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161'],
+                  rpcUrls: ['https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161'],
                 },
               ],
             });
@@ -223,12 +223,12 @@ async function loadInfo() {
   }, 1000);
 
   let priceType = '';
-  if(chain === 'rinkeby' || chain === 'ethereum') {
+  if(chain === 'goerli' || chain === 'ethereum') {
     priceType = 'ETH';
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
-  const price = web3.utils.fromWei(info.deploymentConfig.mintPrice, 'ether');
+  const price = web3.utils.fromWei(info.runtimeConfig.publicMintPrice, 'ether');
   const pricePerMint = document.getElementById("pricePerMint");
   const maxPerMint = document.getElementById("maxPerMint");
   const totalSupply = document.getElementById("totalSupply");
@@ -285,10 +285,10 @@ function setTotalPrice() {
     mintInput.disabled = true;
     return;
   }
-  const totalPriceWei = BigInt(info.deploymentConfig.mintPrice) * BigInt(mintInputValue);
+  const totalPriceWei = BigInt(info.runtimeConfig.publicMintPrice) * BigInt(mintInputValue);
   
   let priceType = '';
-  if(chain === 'rinkeby' || chain === 'ethereum') {
+  if(chain === 'goerli' || chain === 'ethereum') {
     priceType = 'ETH';
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
@@ -306,7 +306,7 @@ async function mint() {
   mintButton.innerHTML = spinner;
 
   const amount = parseInt(document.getElementById("mintInput").value);
-  const value = BigInt(info.deploymentConfig.mintPrice) * BigInt(amount);
+  const value = BigInt(info.runtimeConfig.publicMintPrice) * BigInt(amount);
   const publicMintActive = await contract.methods.mintingActive().call();
   const presaleMintActive = await contract.methods.presaleActive().call();
 
@@ -315,10 +315,10 @@ async function mint() {
     try {
       const mintTransaction = await contract.methods
         .mint(amount)
-        .send({ from: window.address, value: value.toString() });
+        .send({ from: window.address, value: value.toString(),maxPriorityFeePerGas: null, maxFeePerGas: null});
       if(mintTransaction) {
-        if(chain === 'rinkeby') {
-          const url = `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}`;
+        if(chain === 'goerli') {
+          const url = `https://goerli.etherscan.io/tx/${mintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
@@ -352,10 +352,10 @@ async function mint() {
       const merkleJson = await merkleData.json();
       const presaleMintTransaction = await contract.methods
         .presaleMint(amount, merkleJson)
-        .send({ from: window.address, value: value.toString() });
+        .send({ from: window.address, value: value.toString(),maxPriorityFeePerGas: null, maxFeePerGas: null});
       if(presaleMintTransaction) {
-        if(chain === 'rinkeby') {
-          const url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
+        if(chain === 'goerli') {
+          const url = `https://goerli.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");

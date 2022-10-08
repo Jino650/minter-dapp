@@ -238,30 +238,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Porfolio isotope and filter
+   * GALLERY isotope and filter
    */
-  let PropertiesnIsotope = document.querySelector('.Properties-isotope');
+  let GALLERYnIsotope = document.querySelector('.GALLERY-isotope');
 
-  if (PropertiesnIsotope) {
+  if (GALLERYnIsotope) {
 
-    let PropertiesFilter = PropertiesnIsotope.getAttribute('data-Properties-filter') ? PropertiesnIsotope.getAttribute('data-Properties-filter') : '*';
-    let PropertiesLayout = PropertiesnIsotope.getAttribute('data-Properties-layout') ? PropertiesnIsotope.getAttribute('data-Properties-layout') : 'masonry';
-    let PropertiesSort = PropertiesnIsotope.getAttribute('data-Properties-sort') ? PropertiesnIsotope.getAttribute('data-Properties-sort') : 'original-order';
+    let GALLERYFilter = GALLERYnIsotope.getAttribute('data-GALLERY-filter') ? GALLERYnIsotope.getAttribute('data-GALLERY-filter') : '*';
+    let GALLERYLayout = GALLERYnIsotope.getAttribute('data-GALLERY-layout') ? GALLERYnIsotope.getAttribute('data-GALLERY-layout') : 'masonry';
+    let GALLERYSort = GALLERYnIsotope.getAttribute('data-GALLERY-sort') ? GALLERYnIsotope.getAttribute('data-GALLERY-sort') : 'original-order';
 
     window.addEventListener('load', () => {
-      let PropertiesIsotope = new Isotope(document.querySelector('.Properties-container'), {
-        itemSelector: '.Properties-item',
-        layoutMode: PropertiesLayout,
-        filter: PropertiesFilter,
-        sortBy: PropertiesSort
+      let GALLERYIsotope = new Isotope(document.querySelector('.GALLERY-container'), {
+        itemSelector: '.GALLERY-item',
+        layoutMode: GALLERYLayout,
+        filter: GALLERYFilter,
+        sortBy: GALLERYSort
       });
 
-      let menuFilters = document.querySelectorAll('.Properties-isotope .Properties-flters li');
+      let menuFilters = document.querySelectorAll('.GALLERY-isotope .GALLERY-flters li');
       menuFilters.forEach(function(el) {
         el.addEventListener('click', function() {
-          document.querySelector('.Properties-isotope .Properties-flters .filter-active').classList.remove('filter-active');
+          document.querySelector('.GALLERY-isotope .GALLERY-flters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
-          PropertiesIsotope.arrange({
+          GALLERYIsotope.arrange({
             filter: this.getAttribute('data-filter')
           });
           if (typeof aos_init === 'function') {

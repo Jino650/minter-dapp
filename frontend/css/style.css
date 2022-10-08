@@ -37,13 +37,19 @@ body {
 }
 
 body { -webkit-touch-callout:none;}
-img {border-radius:10px; pointer-events: none;}
+img {pointer-events: none;}
 img[src$="assets/img/AAWOOM_TEXT_LOGO1.png"] {
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
   image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+video {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto; 
 }
 
 .container {
@@ -84,7 +90,7 @@ a:hover {
 
 .container .logo img {
   fill: #000;
-  height: 2.7rem;
+  height: 2.3rem;
   margin: 10px auto;
   width: auto;
 }

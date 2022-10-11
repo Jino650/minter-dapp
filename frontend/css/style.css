@@ -685,8 +685,8 @@ section {
   display: flex;
   align-items: center;
   height: 110%;
-  opacity: 0;
-  transform: translateY(10vh);
+/*   opacity: 0;
+  transform: translateY(10vh); */
   transition: all 0.5s ease-in-out;
 }
 

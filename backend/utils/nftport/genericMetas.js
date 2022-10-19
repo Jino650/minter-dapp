@@ -22,7 +22,6 @@ const genericObject = {
   "image": GENERIC_IMAGE,
   "external_url": extraMetadata.external_url || null,
   "date": 1647039293429,
-  "compiler": "HashLips Art Engine - codeSTACKr Modified"
 }
 
 fs.writeFileSync(

@@ -13,110 +13,15 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 50,
     layersOrder: [
       { name: "Background",   options: {
         blend: MODE.multiply,
         opacity: 5,
       }, },
-      { name: "Body" },
-      { name: "Special" },
+      { name: "Body 2" },
+      { name: "Special 2" },
       { name: "Eyes" },
-    ],
-  },
-  {
-    growEditionSizeTo: 25,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 30,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 40,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-    ],
-  },
-  {
-    growEditionSizeTo: 50,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 55,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 60,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 70,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 80,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 90,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Clothing" },
     ],
   },
   {
@@ -125,21 +30,37 @@ const layerConfigurations = [
       { name: "Background" },
       { name: "Body" },
       { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" }, 
-      { name: "Headwear" },
-      { name: "Clothing" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
     ],
   },
   {
-    growEditionSizeTo: 105,
+    growEditionSizeTo: 150,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
       { name: "Special" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 200,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Special 2" },
       { name: "Accessories" },
       { name: "Eyes" },
-      { name: "Eyewear" }, 
+    ],
+  },
+  {
+    growEditionSizeTo: 250,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Eyes" },
       { name: "Clothing" },
     ],
   },
@@ -148,8 +69,55 @@ const layerConfigurations = [
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
-      { name: "The Other" },
+      { name: "Special" },
+      { name: "Accessories" },
       { name: "Eyes" },
+      { name: "Eyewear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 350,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 400,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Special 2" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 450,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Special 2" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+      { name: "Signature" },
+    ],
+  },
+  {
+    growEditionSizeTo: 500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Clothing" },
     ],
   },
   {
@@ -157,118 +125,7 @@ const layerConfigurations = [
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 830,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "The Other" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1300,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "The Other" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 2300,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 3100,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 4000,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 4500,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "The Other" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 5000,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "The Other" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 6250,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Glitch Mode" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 7500,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 8000,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 8950,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Glitch Mode" },
+      { name: "Special" },
       { name: "Accessories" },
       { name: "Eyes" }, 
       { name: "Headwear" },
@@ -276,21 +133,11 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 9900,
+    growEditionSizeTo: 600,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
-      { name: "Accessories" },
-      { name: "Eyes" }, 
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 10000,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
+      { name: "Special" },
       { name: "Accessories" },
       { name: "Eyes" },
       { name: "Eyewear" }, 
@@ -298,24 +145,159 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 10025,
+    growEditionSizeTo: 650,
     layersOrder: [
       { name: "Background" },
-      { name: "Special" },
-      { name: "Glitch Mode" },
-      { name: "Accessories" },
-      { name: "Eyes" }, 
-      { name: "Glitch Clothing" },
+      { name: "Body 2" },
+      { name: "The Other" },
+      { name: "Eyes" },
+      { name: "Signature" },
     ],
   },
   {
-    growEditionSizeTo: 10050,
+    growEditionSizeTo: 700,
     layersOrder: [
       { name: "Background" },
-      { name: "Special" },
+      { name: "Body" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 750,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "The Other" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+    ],
+  },
+  {
+    growEditionSizeTo: 800,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "The Other" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 850,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Eyes" },
+      { name: "Clothing" },
+      { name: "Signature" },
+    ],
+  },
+  {
+    growEditionSizeTo: 900,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 950,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "The Other" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1050,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "The Other" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1100,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
       { name: "Glitch Mode" },
       { name: "Eyes" },
-      { name: "Glitch Clothing" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1150,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1200,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1250,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Glitch Mode" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1300,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 1350,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Eyewear" }, 
+      { name: "Clothing" },
     ],
   },
 ];
@@ -347,20 +329,20 @@ const CONTRACT_SYMBOL = 'AAWOOM';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc'; // 이거 바꿔야 함
 const TREASURY_ADDRESS = '0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc'; // 꼭
-const MAX_SUPPLY = 3; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. goerli = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 3; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-09-25T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-10-29T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-10-12T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it

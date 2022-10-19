@@ -89,6 +89,8 @@ a:hover {
 --------------------------------------------------------------*/
 
 .container .logo img {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   fill: #000;
   height: 2.3rem;
   margin: 10px auto;
@@ -374,6 +376,7 @@ header .container {
   max-height: 40px;
   margin-right: 6px;
 }
+
 
 .header .logo h1 {
   font-size: 30px;
@@ -1028,7 +1031,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(3);
-  color: #000
+  color: rgb(255, 255, 255)
 }
 
 /* MEDIA QUERIES */

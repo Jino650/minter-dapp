@@ -8,12 +8,12 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "AAWOOM";
-const description = "Remember to replace this description";
+const description = "Now comes a new era. Welcome to the AAWOOM. The AAWOOM, Designed by Vellah Olufsen Has Finally been released to the world. The story these AAWOOM characters is just beginning. You are now departing together from the starting point in AAWOOM history. Join us on the journey in Metaverse.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 50,
+    growEditionSizeTo: 20,
     layersOrder: [
       { name: "Background",   options: {
         blend: MODE.multiply,
@@ -25,7 +25,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 25,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -35,7 +35,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 150,
+    growEditionSizeTo: 30,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -45,7 +45,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 200,
+    growEditionSizeTo: 40,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
@@ -55,12 +55,92 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 250,
+    growEditionSizeTo: 50,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
       { name: "Special" },
       { name: "Eyes" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 55,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 60,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 70,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Special 2" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 80,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Special 2" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+      { name: "Signature" },
+    ],
+  },
+  {
+    growEditionSizeTo: 90,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 100,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 105,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Special 2" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Eyewear" }, 
       { name: "Clothing" },
     ],
   },
@@ -68,214 +148,29 @@ const layerConfigurations = [
     growEditionSizeTo: 300,
     layersOrder: [
       { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
+      { name: "Body 2" },
+      { name: "The Other" },
       { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 350,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-      { name: "Clothing" },
+      { name: "Signature" },
     ],
   },
   {
     growEditionSizeTo: 400,
     layersOrder: [
       { name: "Background" },
-      { name: "Body 2" },
-      { name: "Special 2" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 450,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body 2" },
-      { name: "Special 2" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-      { name: "Signature" },
-    ],
-  },
-  {
-    growEditionSizeTo: 500,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 550,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" }, 
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 600,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Eyewear" }, 
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 650,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body 2" },
-      { name: "The Other" },
-      { name: "Eyes" },
-      { name: "Signature" },
-    ],
-  },
-  {
-    growEditionSizeTo: 700,
-    layersOrder: [
-      { name: "Background" },
       { name: "Body" },
       { name: "Eyes" },
       { name: "Eyewear" },
     ],
   },
   {
-    growEditionSizeTo: 750,
+    growEditionSizeTo: 830,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
       { name: "The Other" },
       { name: "Accessories" },
       { name: "Eyes" },
-    ],
-  },
-  {
-    growEditionSizeTo: 800,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "The Other" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 850,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body 2" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-      { name: "Signature" },
-    ],
-  },
-  {
-    growEditionSizeTo: 900,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 950,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1000,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "The Other" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1050,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body 2" },
-      { name: "The Other" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1100,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Glitch Mode" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1150,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Eyes" },
-      { name: "Headwear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1200,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 1250,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Glitch Mode" },
-      { name: "Accessories" },
-      { name: "Eyes" }, 
-      { name: "Headwear" },
-      { name: "Clothing" },
     ],
   },
   {
@@ -283,6 +178,101 @@ const layerConfigurations = [
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
+      { name: "The Other" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 2300,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Eyes" },
+      { name: "Clothing" },
+      { name: "Signature" },
+    ],
+  },
+  {
+    growEditionSizeTo: 3100,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 4000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 4500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "The Other" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 5000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "The Other" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 6250,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Glitch Mode" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 7500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Eyes" },
+      { name: "Headwear" },
+      { name: "Clothing" },
+      { name: "Signature" },
+    ],
+  },
+  {
+    growEditionSizeTo: 8000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 8950,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Glitch Mode" },
       { name: "Accessories" },
       { name: "Eyes" }, 
       { name: "Headwear" },
@@ -290,7 +280,18 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 1350,
+    growEditionSizeTo: 9900,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -298,6 +299,7 @@ const layerConfigurations = [
       { name: "Eyes" },
       { name: "Eyewear" }, 
       { name: "Clothing" },
+      { name: "Signature" },
     ],
   },
 ];
@@ -313,7 +315,7 @@ const format = {
 };
 
 const extraMetadata = {
-  Designed : "Vellah Olufsen", // Replace with your website or remove this line if you do not have one.
+  Designer : "Vellah Olufsen", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info

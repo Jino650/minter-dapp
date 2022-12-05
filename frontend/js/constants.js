@@ -3,7 +3,7 @@ const chain = 'goerli'; // goerli, polygon, or ethereum
 
 const welcome_h1 = "Welcome to the AAWOOM";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The&nbsp;<strong>AAWOOM</strong>, Designed by&nbsp;<strong>Vellah Olufsen</strong>&nbsp;Has Finally been released to the world.&nbsp;<strong>Join us on the journey.</strong>';
+const welcome_p = 'The&nbsp;<strong>AAWOOM</strong>, Designed by&nbsp;<strong>Vellah</strong>&nbsp;Has Finally been released to the world.&nbsp;<strong>Join us on the journey.</strong>';
 const h1_presale_coming_soon = "NFT Drop Coming Soon.";
 const h1_presale_mint = "Pre-Sale Minting Open.";
 const h1_public_mint = "Public Minting Open.";

@@ -8,12 +8,12 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "AAWOOM";
-const description = "Now comes a new era. Welcome to the AAWOOM. The AAWOOM, Designed by Vellah Olufsen Has Finally been released to the world. The story these AAWOOM characters is just beginning. You are now departing together from the starting point in AAWOOM history. Join us on the journey in Metaverse.";
+const description = "The AAWOOM, Designed by Vellah Olufsen Has Finally been released to the world. You are now departing together from the starting point in AAWOOM history.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 3,
     layersOrder: [
       { name: "Background",   options: {
         blend: MODE.multiply,
@@ -25,7 +25,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 25,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -35,7 +35,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 30,
+    growEditionSizeTo: 13,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -45,51 +45,51 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 40,
+    growEditionSizeTo: 18,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
       { name: "Special 2" },
       { name: "Accessories" },
       { name: "Eyes" },
+    ],
+  },
+  {
+    growEditionSizeTo: 22,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Eyes" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 28,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Accessories" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+    ],
+  },
+  {
+    growEditionSizeTo: 32,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body" },
+      { name: "Special" },
+      { name: "Eyes" },
+      { name: "Eyewear" },
+      { name: "Clothing" },
     ],
   },
   {
     growEditionSizeTo: 50,
     layersOrder: [
       { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 55,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Accessories" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-    ],
-  },
-  {
-    growEditionSizeTo: 60,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Body" },
-      { name: "Special" },
-      { name: "Eyes" },
-      { name: "Eyewear" },
-      { name: "Clothing" },
-    ],
-  },
-  {
-    growEditionSizeTo: 70,
-    layersOrder: [
-      { name: "Background" },
       { name: "Body 2" },
       { name: "Special 2" },
       { name: "Accessories" },
@@ -98,7 +98,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 80,
+    growEditionSizeTo: 85,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
@@ -145,7 +145,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 300,
+    growEditionSizeTo: 155,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
@@ -155,7 +155,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 400,
+    growEditionSizeTo: 199,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -164,7 +164,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 830,
+    growEditionSizeTo: 350,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -174,7 +174,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 1300,
+    growEditionSizeTo: 650,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -184,7 +184,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 2300,
+    growEditionSizeTo: 800,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
@@ -194,7 +194,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 3100,
+    growEditionSizeTo: 1000,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -204,7 +204,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 4000,
+    growEditionSizeTo: 1100,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -214,7 +214,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 4500,
+    growEditionSizeTo: 1800,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -225,7 +225,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 5000,
+    growEditionSizeTo: 3000,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
@@ -236,7 +236,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 6250,
+    growEditionSizeTo: 3300,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -247,7 +247,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 7500,
+    growEditionSizeTo: 4200,
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
@@ -258,7 +258,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 8000,
+    growEditionSizeTo: 5900,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
@@ -268,11 +268,43 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 8950,
+    growEditionSizeTo: 6100,
     layersOrder: [
       { name: "Background" },
       { name: "Body" },
       { name: "Glitch Mode" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 6900,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 8500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "Accessories" },
+      { name: "Eyes" }, 
+      { name: "Headwear" },
+      { name: "Clothing" },
+    ],
+  },
+  {
+    growEditionSizeTo: 9500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Body 2" },
+      { name: "The Other" },
       { name: "Accessories" },
       { name: "Eyes" }, 
       { name: "Headwear" },
@@ -284,10 +316,12 @@ const layerConfigurations = [
     layersOrder: [
       { name: "Background" },
       { name: "Body 2" },
+      { name: "The Other" },
       { name: "Accessories" },
       { name: "Eyes" }, 
       { name: "Headwear" },
       { name: "Clothing" },
+      { name: "Signature" },
     ],
   },
   {
@@ -331,7 +365,7 @@ const CONTRACT_SYMBOL = 'AAWOOM';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc'; // 이거 바꿔야 함
 const TREASURY_ADDRESS = '0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc'; // 꼭
-const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED! 이거 10,000개로 바꿔야함
 const MINT_PRICE = 0.001; // Minting price per NFT. goerli = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 3; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
@@ -344,7 +378,7 @@ const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the roy
 const ROYALTY_ADDRESS = "0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc"]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = null; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it

@@ -1244,6 +1244,67 @@ img {
 }
 
 
+.story h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-family: var(--font-primary);
+}
+
+
+.story .call-us {
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+}
+
+.story .call-us h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.story .call-us p {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.story .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.story .content ul li {
+  padding: 0 0 10px 30px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 540;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.story .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--color-primary);
+}
+
+.story .content p{
+  font-size: 20px;
+}
+
+.story .content p:last-child {
+  margin-bottom: 0;
+}
+
+
 /*--------------------------------------------------------------
 # Our ROADMAP Section
 --------------------------------------------------------------*/

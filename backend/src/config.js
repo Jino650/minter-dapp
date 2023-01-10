@@ -363,8 +363,8 @@ const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
 const CONTRACT_NAME = 'AAWOOM';
 const CONTRACT_SYMBOL = 'AAWOOM';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = '0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc'; // 이거 바꿔야 함
-const TREASURY_ADDRESS = '0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc'; // 꼭
+const OWNER_ADDRESS = '0x6bD4969719cb682E138aE24bCf34BBB85d5A9539'; // 이거 바꿔야 함
+const TREASURY_ADDRESS = '0x6bD4969719cb682E138aE24bCf34BBB85d5A9539'; // 꼭
 const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED! 이거 10,000개로 바꿔야함
 const MINT_PRICE = 0.001; // Minting price per NFT. goerli = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 3; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
@@ -375,7 +375,7 @@ const PUBLIC_MINT_START_DATE = "2022-10-29T11:30:48+00:00"; // This is required.
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2022-10-12T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x0828eA0918C0F2763e1D8C6C519e1B872887d9dc"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x6bD4969719cb682E138aE24bCf34BBB85d5A9539"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = null; // only update if you want to manually set the whitelisted addresses

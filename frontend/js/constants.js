@@ -1,5 +1,5 @@
-const contractAddress = "0x6FBF902514403CFd7fD552704C5F13cF427EBF38"; // Replace with your own contract address
-const chain = 'goerli'; // goerli, polygon, or ethereum
+const contractAddress = "0x4C13582C20f9bdC0be8503ae150a352dcB53A842"; // Replace with your own contract address
+const chain = 'ethereum'; // goerli, polygon, or ethereum
 
 const welcome_h1 = "Welcome to the AAWOOM";
 const welcome_h2 = "Connect to MetaMask to Get Started";

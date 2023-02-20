@@ -46,7 +46,7 @@
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-font-serif:'Alegreya Sans SC', sans-serif;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: 'Noto Sans KR', sans-serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
@@ -79,7 +79,7 @@
 
 body {
     margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--bs-font-serif);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);

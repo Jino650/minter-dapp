@@ -55,7 +55,7 @@ video {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
@@ -338,7 +338,7 @@ section {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -403,7 +403,7 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .navbar {
     padding: 0;
   }
@@ -544,7 +544,7 @@ section {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -555,7 +555,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -1036,7 +1036,7 @@ img {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 500px)  {
   .menu {
     gap: 1rem;
   }

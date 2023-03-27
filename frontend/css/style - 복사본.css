@@ -660,13 +660,13 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Mobile Navigation
